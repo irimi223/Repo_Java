@@ -1,6 +1,6 @@
 package homework;
 
-public class TempConverter {
+public class Hw_1_TempConverter {
 
     public static void main(String[] args) {
 

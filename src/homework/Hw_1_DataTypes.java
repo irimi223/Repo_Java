@@ -1,6 +1,6 @@
 package homework;
 
-public class DataTypes {
+public class Hw_1_DataTypes {
 
     public static void main(String[] args) {
 

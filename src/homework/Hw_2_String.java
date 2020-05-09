@@ -2,7 +2,7 @@ package homework;
 
 import java.util.Arrays;
 
-public class StringHomeWork {
+public class Hw_2_String {
     public static void main(String[] args) {
 
         String myName = "Irina";

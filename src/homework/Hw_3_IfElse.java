@@ -1,6 +1,6 @@
 package homework;
 
-public class IfElseHW {
+public class Hw_3_IfElse {
 
     public static void main(String[] args) {
 

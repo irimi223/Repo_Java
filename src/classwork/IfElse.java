@@ -17,10 +17,10 @@ public class IfElse {
         //System.out.println(Arrays.toString(fullNameSplit));
 
         //System.out.println(length);
-        if (fullNameSplit.length <=3) {
-            if (fullNameSplit.length <=1) {
-                System.out.println("First Name: " + fullNameSplit [0]);
-            } else if (fullNameSplit.length <=2) {
+        if (fullNameSplit.length <= 3) {
+            if (fullNameSplit.length <= 1) {
+                System.out.println("First Name: " + fullNameSplit[0]);
+            } else if (fullNameSplit.length <= 2) {
                 System.out.println("First Name: " + fullNameSplit[0]);
                 System.out.println("Last Name: " + fullNameSplit[1]);
             } else {
@@ -68,7 +68,10 @@ public class IfElse {
         }
 
 
+        for (int j = 10; j <= 1; j--) {
+            System.out.println(j);
+        }
+
     }
 }
-
 
