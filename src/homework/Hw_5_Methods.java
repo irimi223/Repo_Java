@@ -7,13 +7,16 @@ public class Hw_5_Methods {
     public static void main(String[] args) {
         String[] names = {"john" , "michael" , "dora" , "philip" , "ilena" , "palena" , "fahry"};
         String nameToSearch = "fahry";
-        int index = position(names, nameToSearch);
-        if (index >0) {
+        //int index = position(names, nameToSearch);
+        /*if (index >0) {
             //System.out.println(index);
             System.out.println(names[index] + " is on position " + (index + 1));
         } else {
             System.out.println(nameToSearch + " is not present in the array");
         }
+
+         */
+
 
         int[] numbers = {12, 22, 3308, 33, 887};
         System.out.println("Average of the given array: " + aver(numbers));
@@ -38,12 +41,21 @@ public class Hw_5_Methods {
      */
 
     public static int position (String[] arrayNames, String nmToSearch) {
-        int pos =-1;
+        int pos =0;
         for (int z = 0; z < arrayNames.length; z++) {
-            if (arrayNames[z] == nmToSearch) {
-                pos = z;
+            if (arrayNames[z].equalsIgnoreCase(nmToSearch)) {
+            //if (arrayNames[z] == nmToSearch) {
+                pos = z+1;
+                break; // when we found our value we dont need to continue the loop
             }
-        } return pos;
+        }
+        if (pos >0) {
+            //System.out.println(index);
+            System.out.println(arrayNames[pos-1] + " is on position " + pos);
+        } else {
+            System.out.println(nmToSearch + " is not present in the array");
+        }
+        return pos;
 
     }
     /**
@@ -68,8 +80,8 @@ public class Hw_5_Methods {
      */
 
     public static int maximum (int [] array) {
-        int max = 0;
-        for (int j : array) {
+        int max = array[0];
+        for (int j=1; j<array.length; j++) {
             if (j>max ) {
                 max = j;
             }
